@@ -20,6 +20,15 @@ or to build the report
 ```
 nsoc --build
 ```
+## Authentication
+### Facebook
+The Facebook API's access token has a 60-day validity period, and the data will fail to update upon its expiry. Should this occur, easily reconnect the API by running this code in R and following the instructions
+```
+webreport::renew_fb_cred()
+```
+
+### Twitter
+Upon first use, you will be given a choice to save authentication details.
 
 ***
 Contact: <News@nesrea.gov.ng>.
